@@ -1,0 +1,12 @@
+{:pedestal    {:port          8080
+               :host          "0.0.0.0"
+               :http-type     :jetty
+               :join?         false
+               :resource-path "public"
+               :csrf          false}
+ :cookie      {:cookie-name  "raiser-cookies"
+               :cookie-key   "KeF5ne2TLMga2axb"
+               :cookie-attrs {:max-age 2592000
+                              :secure  true}}
+ :datomic     {:uri      "datomic:mem://zmone"
+               :part     :db.part/app}}
